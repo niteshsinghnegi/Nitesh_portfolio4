@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #0f0f1a;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+nav a {
+  margin-left: 50px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ffcc;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  padding-top: 100px;
+  gap: 50px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+/* NAME */
+.hero-text h1 {
+  font-size: 60px;
+}
+
+/* 🔥 UPDATED PARAGRAPH (IMPORTANT) */
+.hero-text p {
+  margin-top: 10px;
+  font-size: 28px;        /* 🔥 font bada kiya */
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.hero-text span {
+  color: #00ffcc;
+}
+
+.hero-text button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #00ffcc;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+.hero-text button:hover {
+  transform: scale(1.1);
+}
+
+/* IMAGE */
+.hero-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,255,204,0.6);
+  animation: float 3s ease-in-out infinite;
+  transition: 0.4s;
+}
+
+.hero-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Sections */
+section {
+  padding: 80px;
+  text-align: center;
+}
+
+/* About */
+.about p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: #1c1c2e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 130px;
+  transition: 0.4s;
+}
+
+.skill-card img {
+  width: 60px;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* ================= PROJECTS ================= */
+.projects {
+  padding: 80px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #1c1c2e;
+  border-radius: 12px;
+  width: 280px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.project-card img {
+  width: 105%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+}
+
+.project-card p {
+  font-size: 14px;
+  padding: 0 10px 15px;
+  color: #bbb;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: auto;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  padding: 12px;
+  background: #00ffcc;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px 20px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding-top: 120px;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px; /* mobile me readable */
+  }
+
+  .hero-img img {
+    width: 220px;
+    height: 220px;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+
+  .skills-grid {
+    gap: 15px;
+  }
+
+  .skill-card {
+    width: 130px;
+    padding: 15px;
+  }
+
+  .projects-grid {
+    gap: 15px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+nav a.active {
+  color: #00ffcc;
+  font-weight: bold;
+}

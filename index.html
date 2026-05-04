@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitesh Negi Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <div class="logo">MyPortfolio</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Nitesh Negi</span></h1>
+    <p>
+      Frontend Developer | UI/UX Designer <br>
+      Crafting Modern & User-Friendly Web Experiences
+    </p>
+    <button onclick="scrollToSection('contact')">Hire Me</button>
+  </div>
+
+  <div class="hero-img">
+    <img src="assets/profile.jpg" alt="Profile">
+  </div>
+</section>
+
+<!-- 🔥 Projects Section -->
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="assets/project 1.png.png" alt="Amazon Clone">
+      <h3>Amazon Clone</h3>
+      <p>Responsive e-commerce UI using HTML & CSS</p>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/project  2.png.png" alt="Food Website">
+      <h3>Foodie Zone</h3>
+      <p>Modern food website design with animations</p>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/project 3.png.png" alt="Portfolio">
+      <h3>Portfolio Website</h3>
+      <p>Personal animated portfolio using JavaScript</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate developer who loves creating modern web applications with smooth animations and clean UI.
+    I focus on building responsive and interactive websites that provide a great user experience.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="skills">
+  <h2>My Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="assets/html.png">
+      <p>HTML</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="assets/css.png2.webp">
+      <p>CSS</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="assets/java script.png">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="assets/adobe .png">
+      <p>Adobe Photoshop</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="assets/figma .png">
+      <p>Figma</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Nitesh Negi | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
